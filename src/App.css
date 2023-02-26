@@ -1,0 +1,114 @@
+/*****************************************************/
+/* Default                                           */
+/*****************************************************/
+.App {
+  display: grid;
+  grid-template-areas:
+    "leftSide main    rightSide"
+    "footer   footer  footer"
+    "navbar   navbar  navbar";
+  grid-template-rows: minmax(90vh, auto) auto 10vh;
+  grid-template-columns: 1fr 8fr 1fr;
+  z-index: 1;
+  position: relative;
+}
+
+.navbarContainer {
+  grid-area: navbar;
+  border: 1px solid red;
+}
+
+.leftSideContainer {
+  grid-area: leftSide;
+  border: 1px solid yellow;
+}
+
+.mainContainer {
+  grid-area: main;
+  border: 1px solid grey;
+}
+
+.rightSideContainer {
+  grid-area: rightSide;
+  border: 1px solid yellow;
+}
+
+.footerContainer {
+  grid-area: footer;
+  border: 1px solid green;
+}
+
+/*****************************************************/
+/* Small devices (landscape phones, 576px and up)    */
+/*****************************************************/
+@media (min-width: 576px) {
+  .App {
+    grid-template-areas:
+      "leftSide main    rightSide"
+      "footer   footer  footer"
+      "navbar   navbar  navbar";
+    grid-template-rows: minmax(90vh, auto) auto 10vh;
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+
+  .mainContainer {
+    background: rgb(83, 83, 83);
+  }
+}
+
+/*****************************************************/
+/* Medium devices (tablets, 768px and up)            */
+/*****************************************************/
+@media (min-width: 768px) {
+  .App {
+    grid-template-areas:
+      "leftSide main    rightSide"
+      "footer   footer  footer"
+      "navbar   navbar  navbar";
+    grid-template-rows: minmax(90vh, auto) auto 10vh;
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+}
+
+/*****************************************************/
+/* Large devices (desktops, 992px and up)            */
+/*****************************************************/
+
+@media (min-width: 992px) {
+  .App {
+    grid-template-areas:
+      "navbar   navbar  navbar"
+      "leftSide main    rightSide"
+      "footer   footer  footer";
+    grid-template-rows: 10vh minmax(90vh, auto) auto;
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+}
+
+/*****************************************************/
+/* X-Large devices (large desktops, 1200px and up)   */
+/*****************************************************/
+@media (min-width: 1200px) {
+  .App {
+    grid-template-areas:
+      "navbar   navbar  navbar"
+      "leftSide main    rightSide"
+      "footer   footer  footer";
+    grid-template-rows: 10vh minmax(90vh, auto) auto;
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+}
+
+/*****************************************************/
+/* XX-Large devices (larger desktops, 1400px and up) */
+/*****************************************************/
+@media (min-width: 1400px) {
+  .App {
+    grid-template-areas:
+      "navbar   navbar  navbar"
+      "leftSide main    rightSide"
+      "footer   footer  footer";
+    grid-template-rows: 10vh minmax(90vh, auto) auto;
+    grid-template-columns: 1fr 8fr 1fr;
+  }
+}
