@@ -8,7 +8,7 @@
     "footer   footer  footer"
     "navbar   navbar  navbar";
   grid-template-rows: minmax(90vh, auto) auto 10vh;
-  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-columns: 0.5fr 9fr 0.5fr;
   z-index: 1;
   position: relative;
 }
@@ -48,7 +48,7 @@
       "footer   footer  footer"
       "navbar   navbar  navbar";
     grid-template-rows: minmax(90vh, auto) auto 10vh;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 0.5fr 8fr 0.5fr;
   }
 
   .mainContainer {

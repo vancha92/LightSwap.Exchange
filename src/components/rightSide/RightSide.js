@@ -1,7 +1,7 @@
 import React from "react";
 
 const RightSide = () => {
-  return <div className="rightSideContainer">RightSide</div>;
+  return <div className="rightSideContainer"></div>;
 };
 
 export default RightSide;
