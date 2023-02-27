@@ -1,13 +1,13 @@
 /*****************************************************/
 /* Default                                           */
 /*****************************************************/
-.footerContainer {
-  grid-area: footer;
+.mainContainer {
+  grid-area: main;
 }
 
-.footer {
-  background: var(--lightBlueColor);
-  border-top: var(--borderLightMustard);
+.test {
+  width: 200px;
+  height: 170px;
 }
 
 /*****************************************************/

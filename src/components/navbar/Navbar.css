@@ -1,13 +1,23 @@
 /*****************************************************/
 /* Default                                           */
 /*****************************************************/
-.footerContainer {
-  grid-area: footer;
+.navbarContainer {
+  grid-area: navbar;
 }
 
-.footer {
-  background: var(--lightBlueColor);
-  border-top: var(--borderLightMustard);
+.navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background: var(--darkBlueColor);
+  border-top: var(--borderDarkMustard);
+  border-bottom: none;
+}
+
+.navMenu {
+  display: flex;
+  gap: 1em;
 }
 
 /*****************************************************/
@@ -27,6 +37,11 @@
 /*****************************************************/
 
 @media (min-width: 992px) {
+  .navbar {
+    top: 0;
+    border-top: none;
+    border-bottom: var(--borderDarkMustard);
+  }
 }
 
 /*****************************************************/

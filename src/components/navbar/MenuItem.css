@@ -1,13 +1,9 @@
 /*****************************************************/
 /* Default                                           */
 /*****************************************************/
-.footerContainer {
-  grid-area: footer;
-}
-
-.footer {
-  background: var(--lightBlueColor);
-  border-top: var(--borderLightMustard);
+.menuItem {
+  position: relative;
+  z-index: 9000;
 }
 
 /*****************************************************/

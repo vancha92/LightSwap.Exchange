@@ -1,13 +1,8 @@
 /*****************************************************/
 /* Default                                           */
 /*****************************************************/
-.footerContainer {
-  grid-area: footer;
-}
-
-.footer {
-  background: var(--lightBlueColor);
-  border-top: var(--borderLightMustard);
+.leftSideContainer {
+  grid-area: leftSide;
 }
 
 /*****************************************************/

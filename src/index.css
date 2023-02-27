@@ -4,19 +4,41 @@
 }
 
 :root {
-  --standardFontColor: #f5f5f5;
-  --darkBlueColor: #01142c;
-  --lightBlueColor: #024897;
-  --mustardColor: #ffce4e;
-  --whiteColor: #f6f0f0;
+  --standardFontColor: #eceaea;
+  --backgroundColor: #01142c;
+  --darkBlueColor: #001a37;
+  --lightBlueColor: #002148;
+  --darkMustardColor: #b89439;
+  --lightMustardColor: #d3aa43;
+  --whiteColor: #eceaea;
   --titleFont: "Pixeboy";
   --textFont: "Pixeboy";
+  --twoColoredMustard: linear-gradient(
+    110deg,
+    var(--darkMustardColor) 60%,
+    var(--lightMustardColor) 60%
+  );
+  --twoColoredBlue: linear-gradient(
+    110deg,
+    var(--lightBlueColor) 60%,
+    var(--darkBlueColor) 60%
+  );
+  --cardBorderMustard: solid 1px #5c4a1c;
+  --cardBorderBlue: solid 1px #001021;
+
+  --borderLightBlue: solid 1px #002148;
+  --borderDarkBlue: solid 1px #001a37;
+  --borderLightMustard: solid 1px #d3aa43;
+  --borderDarkMustard: solid 1px #b89439;
+
+  --borderRadius: 0.75em;
   letter-spacing: 0.1em;
 }
 
-/* body {
-  background: var(--darkBlueColor);
-} */
+body {
+  background: var(--backgroundColor);
+  overflow-x: hidden;
+}
 
 h1,
 h2,
@@ -31,12 +53,19 @@ button {
   color: var(--whiteColor);
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 /* https://andy-bell.co.uk/a-modern-css-reset/ */
-/* Box sizing rules */
+/* Box sizing rules, marging and padding */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove default margin */

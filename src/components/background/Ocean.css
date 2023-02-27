@@ -1,10 +1,5 @@
-body {
-  background: var(--darkBlueColor);
-  overflow-x: hidden;
-}
-
 .ocean {
-  height: 5%;
+  height: 15%;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -18,6 +13,7 @@ body {
     repeat-x;
   position: absolute;
   top: -198px;
+  /* top: -198px; */
   width: 6400px;
   height: 198px;
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
@@ -26,9 +22,18 @@ body {
 
 .wave:nth-of-type(2) {
   top: -175px;
+  /* top: -175px; */
   animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
     swell 7s ease -1.25s infinite;
   opacity: 1;
+}
+
+.wave:nth-of-type(3) {
+  top: -175px;
+  /* top: -175px; */
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.225s infinite,
+    swell 7s ease -1.25s infinite;
+  opacity: 0.5;
 }
 
 @keyframes wave {

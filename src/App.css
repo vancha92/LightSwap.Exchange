@@ -13,31 +13,6 @@
   position: relative;
 }
 
-.navbarContainer {
-  grid-area: navbar;
-  border: 1px solid red;
-}
-
-.leftSideContainer {
-  grid-area: leftSide;
-  border: 1px solid yellow;
-}
-
-.mainContainer {
-  grid-area: main;
-  border: 1px solid grey;
-}
-
-.rightSideContainer {
-  grid-area: rightSide;
-  border: 1px solid yellow;
-}
-
-.footerContainer {
-  grid-area: footer;
-  border: 1px solid green;
-}
-
 /*****************************************************/
 /* Small devices (landscape phones, 576px and up)    */
 /*****************************************************/
@@ -49,10 +24,6 @@
       "navbar   navbar  navbar";
     grid-template-rows: minmax(90vh, auto) auto 10vh;
     grid-template-columns: 0.5fr 8fr 0.5fr;
-  }
-
-  .mainContainer {
-    background: rgb(83, 83, 83);
   }
 }
 
