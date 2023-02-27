@@ -2,6 +2,7 @@
 import React from "react";
 
 // pages and components
+import tradeIcon from "../../assets/tradeIcon.png";
 
 // styles
 import "./Main.css";
@@ -9,7 +10,6 @@ import "./Main.css";
 const Main = () => {
   return (
     <div className="mainContainer">
-      Mains
       <div
         className="test"
         style={{
@@ -18,24 +18,6 @@ const Main = () => {
         }}
       >
         Hallo
-      </div>
-      <div
-        className="test"
-        style={{
-          background: "var(--twoColoredBlue)",
-          border: "var(--cardBorderBlue)",
-        }}
-      >
-        hallo
-      </div>
-      <div
-        className="test"
-        style={{
-          background: "var(--twoColoredBlue)",
-          border: "var(--cardBorderBlue)",
-        }}
-      >
-        hallo
       </div>
       <div
         className="test"

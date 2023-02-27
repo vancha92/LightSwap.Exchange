@@ -4,10 +4,11 @@
 .App {
   display: grid;
   grid-template-areas:
+    "web3     web3    web3"
     "leftSide main    rightSide"
     "footer   footer  footer"
     "navbar   navbar  navbar";
-  grid-template-rows: minmax(90vh, auto) auto 10vh;
+  grid-template-rows: 56px minmax(calc(100vh - 112px), auto) auto 56px;
   grid-template-columns: 0.5fr 9fr 0.5fr;
   z-index: 1;
   position: relative;
@@ -17,14 +18,6 @@
 /* Small devices (landscape phones, 576px and up)    */
 /*****************************************************/
 @media (min-width: 576px) {
-  .App {
-    grid-template-areas:
-      "leftSide main    rightSide"
-      "footer   footer  footer"
-      "navbar   navbar  navbar";
-    grid-template-rows: minmax(90vh, auto) auto 10vh;
-    grid-template-columns: 0.5fr 8fr 0.5fr;
-  }
 }
 
 /*****************************************************/
@@ -32,11 +25,6 @@
 /*****************************************************/
 @media (min-width: 768px) {
   .App {
-    grid-template-areas:
-      "leftSide main    rightSide"
-      "footer   footer  footer"
-      "navbar   navbar  navbar";
-    grid-template-rows: minmax(90vh, auto) auto 10vh;
     grid-template-columns: 1fr 8fr 1fr;
   }
 }
@@ -48,11 +36,10 @@
 @media (min-width: 992px) {
   .App {
     grid-template-areas:
-      "navbar   navbar  navbar"
+      "navbar   web3    web3"
       "leftSide main    rightSide"
       "footer   footer  footer";
-    grid-template-rows: 10vh minmax(90vh, auto) auto;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 64px minmax(calc(100vh - 64px), auto) auto;
   }
 }
 
@@ -60,26 +47,10 @@
 /* X-Large devices (large desktops, 1200px and up)   */
 /*****************************************************/
 @media (min-width: 1200px) {
-  .App {
-    grid-template-areas:
-      "navbar   navbar  navbar"
-      "leftSide main    rightSide"
-      "footer   footer  footer";
-    grid-template-rows: 10vh minmax(90vh, auto) auto;
-    grid-template-columns: 1fr 8fr 1fr;
-  }
 }
 
 /*****************************************************/
 /* XX-Large devices (larger desktops, 1400px and up) */
 /*****************************************************/
 @media (min-width: 1400px) {
-  .App {
-    grid-template-areas:
-      "navbar   navbar  navbar"
-      "leftSide main    rightSide"
-      "footer   footer  footer";
-    grid-template-rows: 10vh minmax(90vh, auto) auto;
-    grid-template-columns: 1fr 8fr 1fr;
-  }
 }

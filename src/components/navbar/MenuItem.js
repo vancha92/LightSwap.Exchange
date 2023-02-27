@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 // pages and components
+import tradeIcon from "../../assets/tradeIcon.png";
 import Dropdown from "./Dropdown";
 
 // styles
@@ -52,9 +53,17 @@ const MenuItems = ({ menuItem, depthLevel }) => {
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
       >
-        <p className="menuItemTitle" onClick={toggleDropdown}>
-          {menuItem.title}
-        </p>
+        {depthLevel < 1 ? (
+          <div className="iconButton" onClick={toggleDropdown}>
+            <img src={tradeIcon} alt="test" className="iconButtonIMGText" />
+            <p className="iconButtonTitle menuItemTitle">{menuItem.title}</p>
+          </div>
+        ) : (
+          <p className="menuItemTitle" onClick={toggleDropdown}>
+            {menuItem.title}
+          </p>
+        )}
+
         <Dropdown
           subMenu={menuItem.subMenu}
           dropdownToggled={dropdownToggled}
@@ -68,7 +77,16 @@ const MenuItems = ({ menuItem, depthLevel }) => {
   if (!menuItem.subMenu) {
     return (
       <li className="menuItem">
-        <p className="menuItemTitle">{menuItem.title}</p>
+        {depthLevel < 1 ? (
+          <div className="iconButton" onClick={toggleDropdown}>
+            <img src={tradeIcon} alt="test" className="iconButtonIMGText" />
+            <p className="iconButtonTitle menuItemTitle">{menuItem.title}</p>
+          </div>
+        ) : (
+          <p className="menuItemTitle" onClick={toggleDropdown}>
+            {menuItem.title}
+          </p>
+        )}
       </li>
     );
   }

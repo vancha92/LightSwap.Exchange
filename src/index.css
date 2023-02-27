@@ -31,6 +31,8 @@
   --borderLightMustard: solid 1px #d3aa43;
   --borderDarkMustard: solid 1px #b89439;
 
+  --tealBoxShadow: 0px 0px 20px 5px #002148;
+
   --borderRadius: 0.75em;
   letter-spacing: 0.1em;
 }

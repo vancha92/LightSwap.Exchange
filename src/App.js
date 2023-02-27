@@ -6,18 +6,21 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import LeftSide from "./components/leftSide/LeftSide";
 import Main from "./components/main/Main";
-import Navbar from "./components/navbar/Navbar";
+import NavMenu from "./components/navbar/NavMenu";
 import RightSide from "./components/rightSide/RightSide";
+import NavWeb3 from "./components/web3/NavWeb3";
 
 // styles
 import "./App.css";
 import "./components/background/Ocean.css";
+import "./functions/UtilityClasses.css";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <NavMenu />
+        <NavWeb3 />
         <LeftSide />
         <Main />
         <RightSide />
