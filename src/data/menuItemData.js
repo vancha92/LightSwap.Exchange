@@ -1,41 +1,26 @@
+import earnIcon from "../assets/earnIcon.png";
+import nftIcon from "../assets/nftIcon.png";
+import tradeIcon from "../assets/tradeIcon.png";
+
 export const menuItemData = [
   {
-    title: "1",
-
+    title: "Swap",
+    icon: tradeIcon,
+  },
+  {
+    title: "Earn",
+    icon: earnIcon,
     subMenu: [
       {
-        title: "1.1",
+        title: "Farms",
       },
       {
-        title: "1.2",
+        title: "Pools",
       },
     ],
   },
   {
-    title: "2",
-    subMenu: [
-      {
-        title: "2.1",
-      },
-      {
-        title: "2.2",
-        subMenu: [
-          {
-            title: "2.2.1",
-          },
-        ],
-      },
-      {
-        title: "2.3",
-        subMenu: [
-          {
-            title: "2.3.1",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: "3",
+    title: "NFT",
+    icon: nftIcon,
   },
 ];

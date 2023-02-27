@@ -5,15 +5,29 @@
   grid-area: navbar;
   position: sticky;
   bottom: 0;
-  /* width: 100%; */
   height: 56px;
+  display: flex;
+  align-items: center;
   background: var(--darkBlueColor);
   border-top: var(--borderDarkMustard);
   border-bottom: none;
 }
 
+.brandLogoNav {
+  display: none;
+}
+
+.brandTitleNav {
+  display: none;
+}
+
 .navMenu {
   display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
   gap: 1em;
 }
 
@@ -36,11 +50,31 @@
 @media (min-width: 992px) {
   .navMenuContainer {
     top: 0;
-    width: auto;
     height: 64px;
     border-top: none;
     border-bottom: var(--borderDarkMustard);
     transition: top 0.3s;
+  }
+
+  .brandLogoNav {
+    display: unset;
+    aspect-ratio: 1;
+    width: 40px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    margin-left: 8px;
+  }
+
+  .brandTitleNav {
+    display: unset;
+    color: var(--lightMustardColor);
+    margin-right: 4em;
+    font-weight: bold;
+  }
+
+  .navMenu {
+    width: auto;
   }
 }
 

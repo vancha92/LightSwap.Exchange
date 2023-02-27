@@ -2,7 +2,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
 // pages and components
-import tradeIcon from "../../assets/tradeIcon.png";
 import Dropdown from "./Dropdown";
 
 // styles
@@ -11,6 +10,7 @@ import "./MenuItem.css";
 const MenuItems = ({ menuItem, depthLevel }) => {
   const [dropdownToggled, setDropdownToggled] = useState(false);
   const ref = useRef();
+  const dropdownClass = depthLevel > 1 ? "subMenuItem" : "menuItem";
 
   // Dropdown toggle
   const toggleDropdown = () => {
@@ -55,7 +55,7 @@ const MenuItems = ({ menuItem, depthLevel }) => {
       >
         {depthLevel < 1 ? (
           <div className="iconButton" onClick={toggleDropdown}>
-            <img src={tradeIcon} alt="test" className="iconButtonIMGText" />
+            <img src={menuItem.icon} alt="test" className="iconButtonIMGText" />
             <p className="iconButtonTitle menuItemTitle">{menuItem.title}</p>
           </div>
         ) : (
@@ -79,7 +79,7 @@ const MenuItems = ({ menuItem, depthLevel }) => {
       <li className="menuItem">
         {depthLevel < 1 ? (
           <div className="iconButton" onClick={toggleDropdown}>
-            <img src={tradeIcon} alt="test" className="iconButtonIMGText" />
+            <img src={menuItem.icon} alt="test" className="iconButtonIMGText" />
             <p className="iconButtonTitle menuItemTitle">{menuItem.title}</p>
           </div>
         ) : (

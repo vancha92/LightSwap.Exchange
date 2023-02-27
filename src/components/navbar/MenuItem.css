@@ -2,7 +2,10 @@
 /* Default                                           */
 /*****************************************************/
 .menuItem {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   z-index: 9000;
 }
 
@@ -23,6 +26,9 @@
 /*****************************************************/
 
 @media (min-width: 992px) {
+  .menuItem {
+    position: relative;
+  }
 }
 
 /*****************************************************/

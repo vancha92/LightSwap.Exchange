@@ -5,15 +5,29 @@
   grid-area: web3;
   position: sticky;
   top: 0;
-  /* width: 100%; */
   height: 56px;
+  display: flex;
+  align-items: center;
   background: var(--darkBlueColor);
   border-top: none;
   border-bottom: var(--borderDarkMustard);
 }
 
+.brandLogoWeb3 {
+  aspect-ratio: 1;
+  width: 40px;
+  margin-top: 4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  margin-left: 8px;
+}
+
 .navWeb3 {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
   gap: 1em;
 }
 
@@ -36,11 +50,18 @@
 @media (min-width: 992px) {
   .navWeb3Container {
     top: 0;
-    width: auto;
     height: 64px;
     border-top: none;
     border-bottom: var(--borderDarkMustard);
     transition: top 0.3s;
+  }
+
+  .navWeb3 {
+    justify-content: flex-end;
+  }
+
+  .brandLogoWeb3 {
+    display: none;
   }
 }
 

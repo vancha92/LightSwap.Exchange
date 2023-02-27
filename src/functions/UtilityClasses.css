@@ -8,12 +8,11 @@
   align-items: center;
   border-radius: var(--borderRadius);
   cursor: pointer;
-  border: var(--borderLightBlue);
   transition: background 0.25s ease;
 }
 
 .iconButton:hover {
-  background: var(--lightBlueColor);
+  background: var(--darkMustardColor);
 }
 
 /* IconButtonText */
@@ -33,4 +32,18 @@
   width: 40px;
   height: 40px;
   filter: invert(100%);
+}
+
+/*****************************************************/
+/* Large devices (desktops, 992px and up)            */
+/*****************************************************/
+
+@media (min-width: 992px) {
+  .iconButtonIMGText {
+    display: none;
+  }
+
+  .iconButtonTitle {
+    font-size: 1em;
+  }
 }

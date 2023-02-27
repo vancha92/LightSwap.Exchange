@@ -2,6 +2,7 @@
 import React from "react";
 
 // pages and components
+import headLogo from "../../assets/headLogo.png";
 import { menuItemData } from "../../data/menuItemData";
 import MenuItem from "./MenuItem";
 
@@ -13,6 +14,8 @@ const NavMenu = () => {
 
   return (
     <div className="navMenuContainer">
+      <img src={headLogo} alt="" className="brandLogoNav" />
+      <div className="brandTitleNav">LightSwap</div>
       <ul className="navMenu">
         {menuItemData.map((menuItem, index) => {
           return (
