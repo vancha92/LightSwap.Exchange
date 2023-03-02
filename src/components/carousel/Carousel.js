@@ -7,7 +7,6 @@ import { Swiper } from "swiper/react";
 import { useWindowSize } from "../../hooks/useWindowSize";
 import { createSlide1 } from "./CarouselSlide1";
 import { createSlide2 } from "./CarouselSlide2";
-import { createSlide3 } from "./CarouselSlide3";
 
 // styles
 import "swiper/css/bundle";
@@ -40,9 +39,8 @@ const Carousel = () => {
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
       >
-        {createSlide1("Content 1 goes here")}
-        {createSlide2("Next thing will be there")}
-        {/* {createSlide3("Nudes go elsewhere")} */}
+        {createSlide1()}
+        {createSlide2()}
       </Swiper>
     </div>
   );

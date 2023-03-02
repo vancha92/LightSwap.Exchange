@@ -8,7 +8,7 @@ import proxIcon from "../../assets/proxIcon.png";
 
 // styles
 
-export const createSlide1 = (content) => {
+export const createSlide1 = () => {
   const carouselItemContainerStyle = {};
   const carouselItemSpecialBGStyle = {};
 

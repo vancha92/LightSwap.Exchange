@@ -7,7 +7,7 @@ import wormIcon from "../../assets/wormIcon.png";
 
 // styles
 
-export const createSlide2 = (content) => {
+export const createSlide2 = () => {
   const carouselItemContainerStyle = { background: "rgba(160, 226, 95)" };
   const carouselItemSpecialBGStyle = { transform: "translate(0%, 10%)" };
 
