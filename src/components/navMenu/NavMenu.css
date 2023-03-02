@@ -78,6 +78,12 @@
   .navMenu {
     width: auto;
   }
+
+  .homeLink {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
 }
 
 /*****************************************************/

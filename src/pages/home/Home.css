@@ -51,6 +51,13 @@
   display: flex;
   justify-content: center;
 }
+/*******************************************************/
+/*Segment 1 specifics***********************************/
+
+.buttonContainer.highlightBGEmpty {
+  background: unset;
+  border: var(--borderDarkMustard);
+}
 
 /*******************************************************/
 /*Segment 2 specifics***********************************/

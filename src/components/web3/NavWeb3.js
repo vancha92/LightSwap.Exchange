@@ -1,6 +1,7 @@
 // packages
 // eslint-disable-next-line
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useWindowSize } from "../../hooks/useWindowSize";
 
 // pages and components
@@ -11,11 +12,17 @@ import "./NavWeb3.css";
 
 const NavWeb3 = () => {
   const size = useWindowSize();
+  const navigate = useNavigate();
 
   return (
     <div className="navWeb3Container">
       <div className="navWeb3">
-        <img src={headLogo} alt="" className="brandLogoWeb3" />
+        <img
+          src={headLogo}
+          alt=""
+          className="brandLogoWeb3"
+          onClick={() => navigate("/")}
+        />
 
         <div className="buttonContainer highlightBG">
           <button className="buttonTextOnly">

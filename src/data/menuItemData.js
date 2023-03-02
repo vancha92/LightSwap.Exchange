@@ -5,8 +5,10 @@ import tradeIcon from "../assets/tradeIcon.png";
 
 export const menuItemData = [
   {
-    title: "Swap",
+    title: "Trade",
     icon: tradeIcon,
+    link: "swap",
+    type: "internal",
   },
   {
     title: "Earn",
@@ -14,9 +16,13 @@ export const menuItemData = [
     subMenu: [
       {
         title: "Farms",
+        link: "farms",
+        type: "internal",
       },
       {
         title: "Pools",
+        link: "pools",
+        type: "internal",
       },
     ],
   },
@@ -26,11 +32,15 @@ export const menuItemData = [
     subMenu: [
       {
         title: "Epic Gallery",
+        link: "https://epic.gallery/",
+        type: "external",
       },
     ],
   },
   {
     title: "LightPad",
     icon: lightPadIcon,
+    link: "lightpad",
+    type: "internal",
   },
 ];

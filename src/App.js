@@ -11,8 +11,12 @@ import NavMenu from "./components/navMenu/NavMenu";
 import ScrollTopButton from "./components/scrollTopButton/ScrollTopButton";
 import Top from "./components/top/Top";
 import NavWeb3 from "./components/web3/NavWeb3";
+import Farms from "./pages/earn/Farms";
+import Pools from "./pages/earn/Pools";
 import Home from "./pages/home/Home";
-import Swap from "./pages/swap/Swap";
+import LightPad from "./pages/lightPad/LightPad";
+import Liquidity from "./pages/trade/Liquidity";
+import Swap from "./pages/trade/Swap";
 
 // styles
 import "./App.css";
@@ -32,6 +36,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/swap" element={<Swap />} />
+            <Route path="/liquidity" element={<Liquidity />} />
+            <Route path="/farms" element={<Farms />} />
+            <Route path="/pools" element={<Pools />} />
+            <Route path="/lightpad" element={<LightPad />} />
           </Routes>
         </Main>
 

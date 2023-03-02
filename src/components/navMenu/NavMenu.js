@@ -1,5 +1,6 @@
 // packages
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 // pages and components
 import headLogo from "../../assets/headLogo.png";
@@ -11,11 +12,14 @@ import "./NavMenu.css";
 
 const NavMenu = () => {
   let depthLevel = 0;
+  const navigate = useNavigate();
 
   return (
     <div className="navMenuContainer">
-      <img src={headLogo} alt="" className="brandLogoNav" />
-      <div className="brandTitleNav">LightSwap</div>
+      <div className="homeLink" onClick={() => navigate("/")}>
+        <img src={headLogo} alt="" className="brandLogoNav" />
+        <div className="brandTitleNav">LightSwap</div>
+      </div>
       <ul className="navMenu">
         {menuItemData.map((menuItem, index) => {
           return (

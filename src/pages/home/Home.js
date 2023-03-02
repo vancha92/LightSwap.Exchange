@@ -1,5 +1,5 @@
 // packages
-import React from "react";
+import React, { useEffect } from "react";
 import Carousel from "../../components/carousel/Carousel";
 
 // pages and components
@@ -14,6 +14,11 @@ import "./Home.css";
 const Home = () => {
   let windowWidth = useWindowSize().width;
   let size = windowWidth > 991 ? windowWidth / 4 : windowWidth / 2;
+
+  // Scroll to top when page loads
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <div className="home">
@@ -44,13 +49,7 @@ const Home = () => {
                   {windowWidth > 991 ? "Connect Wallet" : "Connect"}
                 </button>
               </div>
-              <div
-                className="buttonContainer highlightBG"
-                style={{
-                  background: "unset",
-                  border: "var(--borderDarkMustard)",
-                }}
-              >
+              <div className="buttonContainer highlightBGEmpty">
                 <button className="buttonTextOnly">Trade now</button>
               </div>
             </div>
