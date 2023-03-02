@@ -2,8 +2,8 @@
 /*****************************************************/
 .movingBundle1 {
   position: relative;
-  height: 192px;
-  width: 192px;
+  aspect-ratio: 1;
+  width: 50px;
 }
 
 .movingBundle1Part1,
@@ -15,23 +15,24 @@
 
 .movingBundle1Part1 {
   top: 0;
-  left: 40%;
+  left: 50%;
 }
 
 .movingBundle1Part2 {
-  top: 8%;
-  left: 8.5%;
+  top: 50%;
+  left: 25%;
 }
 
 .movingBundle1Part3 {
-  top: 35%;
-  left: 33%;
+  top: 15%;
+  left: 15%;
 }
 
 .movingBundlePart1IMG1,
 .movingBundlePart1IMG2,
 .movingBundlePart1IMG3 {
   aspect-ratio: 1;
+  width: 100px;
 }
 
 .movingBundlePart1IMG1 {

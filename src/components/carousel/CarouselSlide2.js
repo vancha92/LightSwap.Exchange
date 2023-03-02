@@ -9,7 +9,7 @@ import wormIcon from "../../assets/wormIcon.png";
 
 export const createSlide2 = (content) => {
   const carouselItemContainerStyle = { background: "rgba(160, 226, 95)" };
-  const carouselItemSpecialBGStyle = { transform: "translate(25%, 0%)" };
+  const carouselItemSpecialBGStyle = { transform: "translate(0%, 10%)" };
 
   return (
     <SwiperSlide>

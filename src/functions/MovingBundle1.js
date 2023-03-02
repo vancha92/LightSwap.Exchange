@@ -2,6 +2,7 @@ import React from "react";
 import "./MovingBundle1.css";
 
 const MovingBundle1 = ({
+  movingBundleCSS,
   bundle1CSS,
   img1,
   img1CSS,
@@ -12,6 +13,8 @@ const MovingBundle1 = ({
   img3,
   img3CSS,
 }) => {
+  let movingBungleSettings = movingBundleCSS ? movingBundleCSS : {};
+
   let bungle1Settings = bundle1CSS ? bundle1CSS : {};
   let bungle2Settings = bundle2CSS ? bundle2CSS : {};
   let bungle3Settings = bundle3CSS ? bundle3CSS : {};
@@ -21,7 +24,7 @@ const MovingBundle1 = ({
   let img3Settings = img3CSS ? img3CSS : {};
 
   return (
-    <div className="movingBundle1">
+    <div className="movingBundle1" style={movingBungleSettings}>
       <div className="movingBundle1Part1" style={bungle1Settings}>
         <img
           src={img1}

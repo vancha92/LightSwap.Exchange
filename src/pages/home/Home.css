@@ -2,40 +2,43 @@
 /* Default                                           */
 /*****************************************************/
 .home {
-}
-
-.homeSegmentLane {
-  /* background: green; */
-  position: absolute;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  margin-top: 2em;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
 }
 
 .homeSegmentContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  max-width: 992px;
-  overflow: hidden;
+  padding: 0 1em;
 }
 
-/*****************************************************/
-/*First Segment***************************************/
-.firstHomeSegment {
+/*******************************************************/
+/*Generic Segment***************************************/
+.homeSegment {
   display: flex;
+  max-width: 992px;
 }
 
-.firstHomeSegmentContentTop {
+.homeSegmentContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.homeSegmentContentTop {
   font-weight: bold;
   font-size: 4em;
 }
 
-.firstHomeSegmentContentMiddle {
+.homeSegmentContentMiddle {
   font-size: 1.5em;
+}
+
+.homeSegmentContentBottom {
+}
+
+.homeSegmentImage {
 }
 
 /*****************************************************/
