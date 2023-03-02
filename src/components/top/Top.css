@@ -1,37 +1,9 @@
 /*****************************************************/
 /* Default                                           */
 /*****************************************************/
-.navMenuContainer {
-  grid-area: navbar;
-  position: sticky;
-  z-index: 9000;
-  bottom: 0;
-  height: 78px;
-  display: flex;
-  align-items: center;
-  background: var(--darkBlueColor);
-  border-top: var(--borderDarkMustard);
-  border-bottom: none;
-}
-
-.brandLogoNav {
-  display: none;
-}
-
-.brandTitleNav {
-  display: none;
-}
-
-.navMenu {
-  display: flex;
-  /* position: relative; */
-  align-items: center;
-  justify-content: space-evenly;
+.topContainer {
   width: 100%;
-  height: 100%;
-  gap: 1em;
-  margin-left: 1em;
-  margin-right: 1em;
+  height: 64px;
 }
 
 /*****************************************************/
@@ -51,35 +23,13 @@
 /*****************************************************/
 
 @media (min-width: 992px) {
-  .navMenuContainer {
-    top: 0;
+  .desktopNavigationPane {
+    position: fixed;
+    z-index: 9000;
+    width: 100%;
     height: 64px;
-    border-top: none;
+    background: var(--darkBlueColor);
     border-bottom: var(--borderDarkMustard);
-    transition: top 0.3s;
-    padding-left: 1em;
-  }
-
-  .brandLogoNav {
-    display: unset;
-    aspect-ratio: 1;
-    width: 40px;
-    margin-top: 4px;
-    margin-right: 4px;
-    margin-bottom: 4px;
-  }
-
-  .brandTitleNav {
-    display: unset;
-    color: var(--lightMustardColor);
-    margin-right: 4em;
-    font-weight: bold;
-  }
-
-  .navMenu {
-    width: auto;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 

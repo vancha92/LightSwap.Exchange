@@ -1,27 +1,30 @@
 /*****************************************************/
 /* Default                                           */
 /*****************************************************/
-.navWeb3Container {
+.navMenuContainer {
   position: fixed;
   z-index: 9000;
-  top: 0;
-  right: 0;
-  height: 64px;
+  bottom: 0;
+  height: 78px;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 0 1em;
-  width: 100%;
   background: var(--darkBlueColor);
-  border-bottom: var(--borderDarkMustard);
+  border-top: var(--borderDarkMustard);
 }
 
-.brandLogoWeb3 {
-  aspect-ratio: 1;
-  width: 40px;
+.brandLogoNav {
+  display: none;
 }
 
-.navWeb3 {
+.brandTitleNav {
+  display: none;
+}
+
+.navMenu {
   display: flex;
+  /* position: relative; */
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -46,23 +49,34 @@
 /*****************************************************/
 
 @media (min-width: 992px) {
-  .navWeb3Container {
+  .navMenuContainer {
     top: 0;
     height: 64px;
     transition: top 0.3s;
+    padding-left: 1em;
     background: unset;
-    border-bottom: unset;
-    justify-content: flex-end;
+    border-top: unset;
     width: unset;
   }
 
-  .navWeb3 {
-    justify-content: flex-end;
-    margin-left: 0;
+  .brandLogoNav {
+    display: unset;
+    aspect-ratio: 1;
+    width: 40px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
   }
 
-  .brandLogoWeb3 {
-    display: none;
+  .brandTitleNav {
+    display: unset;
+    color: var(--lightMustardColor);
+    margin-right: 4em;
+    font-weight: bold;
+  }
+
+  .navMenu {
+    width: auto;
   }
 }
 

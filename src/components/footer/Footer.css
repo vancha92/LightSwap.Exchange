@@ -2,16 +2,23 @@
 /* Default                                           */
 /*****************************************************/
 .footerContainer {
-  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  background: var(--twoColoredBlue);
+  border-top: var(--borderLightMustard);
+  padding: 0 1em;
 }
 
 .footer {
-  background: var(--twoColoredBlue);
-  border-top: var(--borderLightMustard);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1em;
+  max-width: 992px;
+}
+
+.mobileNavMenu {
+  height: 78px;
+  width: 100%;
 }
 
 /*****************************************************/
@@ -31,11 +38,6 @@
 /*****************************************************/
 
 @media (min-width: 992px) {
-  .footer {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 10vw;
-  }
 }
 
 /*****************************************************/

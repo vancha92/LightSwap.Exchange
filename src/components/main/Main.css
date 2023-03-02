@@ -2,14 +2,8 @@
 /* Default                                           */
 /*****************************************************/
 .mainContainer {
-  grid-area: main;
+  min-height: calc(100vh - 142px);
 }
-
-/* .test {
-  width: 200px;
-  height: 170px;
-  margin: 5px 0;
-} */
 
 /*****************************************************/
 /* Small devices (landscape phones, 576px and up)    */
@@ -28,6 +22,9 @@
 /*****************************************************/
 
 @media (min-width: 992px) {
+  .mainContainer {
+    min-height: calc(100vh - 64px);
+  }
 }
 
 /*****************************************************/
