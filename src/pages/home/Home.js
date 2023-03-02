@@ -23,18 +23,19 @@ const Home = () => {
           {/***********/}
           <div className="segment1 homeSegmentContent">
             {/* Top */}
-            <div className="segment1 homeSegmentContentTop">
+            {/* <div className="segment1 homeSegmentContentTop">
               Let there be Light ...{" "}
               <span style={{ color: "var(--lightMustardColor)" }}>Swap!</span>
-            </div>
+            </div> */}
             {/* Middle */}
-            <div className="segment1 homeSegmentContentMiddle">
+            {/* <div className="segment1 homeSegmentContentMiddle">
               Trade, earn, and win crypto on the most popular decentralized
               platform in the galaxy.
-            </div>
+            </div> */}
             {/* Bottom */}
-            <div className="segment1 homeSegmentContentBottom">Action</div>
+            {/* <div className="segment1 homeSegmentContentBottom">Action</div> */}
           </div>
+
           {/* Image */}
           {/*********/}
           <div className="segment1 homeSegmentImage">
