@@ -1,6 +1,8 @@
 /* Generic button class */
 .iconButton {
-  width: 48px;
+  min-width: 48px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   height: 48px;
   display: flex;
   flex-direction: column;
@@ -32,6 +34,42 @@
   width: 40px;
   height: 40px;
   filter: invert(100%);
+}
+
+/*****************************************************/
+/*****************************************************/
+.buttonContainer {
+  cursor: pointer;
+  background: var(--lightBlueColor);
+  border: var(--borderLightBlue);
+  border-radius: var(--borderRadius);
+  transition: background 0.25s ease;
+}
+
+.buttonContainer:hover {
+  background: var(--darkMustardColor);
+}
+
+.buttonTextOnly {
+  margin: 8px 16px;
+}
+
+.buttonContainer.highlightBG {
+  background: var(--highlightColor);
+  cursor: pointer;
+}
+
+.buttonContainer.highlightBG:hover {
+  background: var(--darkMustardColor);
+}
+
+.buttonContainer.highlightDarkBG {
+  background: var(--highlightColor);
+  cursor: pointer;
+}
+
+.buttonContainer.highlightDarkBG:hover {
+  background: var(--darkMustardColor);
 }
 
 /*****************************************************/

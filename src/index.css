@@ -7,10 +7,11 @@
 :root {
   --standardFontColor: #eceaea;
   --backgroundColor: #01142c;
+  --highlightColor: rgb(47, 132, 146);
   --darkBlueColor: #001a37;
   --lightBlueColor: #002148;
   --darkMustardColor: #b89439;
-  --lightMustardColor: #d3aa43;
+  --lightMustardColor: #efc24f;
   --whiteColor: #eceaea;
   --titleFont: "Kanit";
   --textFont: "Kanit";
@@ -107,6 +108,9 @@ body {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
+a {
+  text-decoration: none;
+}
 
 /* Make images easier to work with */
 img,
@@ -121,6 +125,12 @@ button,
 textarea,
 select {
   font: inherit;
+  background: unset;
+  border: unset;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */

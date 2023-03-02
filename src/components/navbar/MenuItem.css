@@ -9,6 +9,20 @@
   z-index: 9000;
 }
 
+.menuItem.subMenu {
+  border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+  transition: background 0.25s ease;
+  cursor: pointer;
+}
+
+.menuItem.subMenu:hover {
+  background: var(--lightMustardColor);
+}
+
+.subMenuItemTitle {
+  margin: 1em 0;
+}
+
 /*****************************************************/
 /* Small devices (landscape phones, 576px and up)    */
 /*****************************************************/
@@ -28,6 +42,16 @@
 @media (min-width: 992px) {
   .menuItem {
     position: relative;
+  }
+
+  .menuItem.subMenu {
+    justify-content: flex-start;
+    border-radius: 0 0 var(--borderRadius) var(--borderRadius);
+  }
+
+  .subMenuItemTitle {
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
 

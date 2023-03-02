@@ -1,23 +1,22 @@
 /*****************************************************/
 /* Default                                           */
 /*****************************************************/
-.dropdown {
-  position: absolute;
-  z-index: 9000;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  transform: translateY(-100%);
-  background: var(--darkMustardColor);
-  border-radius: var(--borderRadius) var(--borderRadius) 0 0;
-  border-top: var(--borderDarkBlue);
-  border-left: var(--borderDarkBlue);
-  border-right: var(--borderDarkBlue);
-  border-bottom: unset;
+.aboutPart {
+  margin-top: 3em;
 }
 
-.dropdownSubmenu {
-  margin-left: 0.5em;
+.aboutTitle {
+  color: var(--darkMustardColor);
+  font-weight: bold;
+}
+
+.aboutItem {
+  margin: 0.4em 0;
+  cursor: pointer;
+}
+
+.aboutItem:hover {
+  color: var(--darkMustardColor);
 }
 
 /*****************************************************/
@@ -37,15 +36,15 @@
 /*****************************************************/
 
 @media (min-width: 992px) {
-  .dropdown {
-    width: 16em;
-    top: 100%;
-    transform: translateY(0%);
-    border-radius: 0 0 var(--borderRadius) var(--borderRadius);
-    border-bottom: var(--borderDarkBlue);
-    border-left: var(--borderDarkBlue);
-    border-top: unset;
-    border-right: var(--borderDarkBlue);
+  .aboutContainer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10em;
+  }
+
+  .aboutItem:hover {
+    text-decoration: var(--borderDarkMustard) underline;
+    color: unset;
   }
 }
 

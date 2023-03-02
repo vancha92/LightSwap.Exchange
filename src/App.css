@@ -8,8 +8,8 @@
     "leftSide main    main   main   main   main   main   main   main   rightSide"
     "footer   footer  footer footer footer footer footer footer footer footer"
     "navbar   navbar  navbar navbar navbar navbar navbar navbar navbar navbar";
-  grid-template-rows: 56px minmax(calc(100vh - 112px), auto) auto 56px;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 64px minmax(calc(100vh - 112px), auto) auto 78px;
+  grid-template-columns: 1em repeat(8, 1fr) 1em;
   /* grid-template-columns: 0.5fr 9fr 0.5fr; */
   z-index: 1;
   position: relative;
@@ -25,9 +25,9 @@
 /* Medium devices (tablets, 768px and up)            */
 /*****************************************************/
 @media (min-width: 768px) {
-  .App {
+  /* .App {
     grid-template-columns: 1fr 8fr 1fr;
-  }
+  } */
 }
 
 /*****************************************************/
@@ -37,11 +37,11 @@
 @media (min-width: 992px) {
   .App {
     grid-template-areas:
-      "navbar   navbar  navbar navbar navbar navbar navbar navbar navbar navbar web3 web3 web3 web3 web3 web3 web3 web3 web3 web3"
-      "leftSide leftSide    main   main   main   main   main   main   main main main main main main main main main main rightSide   rightSide"
-      "footer   footer  footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer";
+      "navbar   navbar    navbar navbar navbar navbar navbar navbar navbar navbar web3   web3   web3   web3   web3   web3   web3   web3   web3      web3"
+      "leftSide leftSide  main   main   main   main   main   main   main   main   main   main   main   main   main   main   main   main   rightSide rightSide"
+      "footer   footer    footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer    footer";
     grid-template-rows: 64px minmax(calc(100vh - 64px), auto) auto;
-    grid-template-columns: repeat(20, 0.5fr);
+    grid-template-columns: repeat(2, auto) repeat(16, 62px) repeat(2, auto);
   }
 }
 

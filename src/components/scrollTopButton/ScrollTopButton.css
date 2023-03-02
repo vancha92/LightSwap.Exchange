@@ -1,23 +1,35 @@
 /*****************************************************/
 /* Default                                           */
 /*****************************************************/
-.dropdown {
-  position: absolute;
-  z-index: 9000;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  transform: translateY(-100%);
-  background: var(--darkMustardColor);
-  border-radius: var(--borderRadius) var(--borderRadius) 0 0;
-  border-top: var(--borderDarkBlue);
-  border-left: var(--borderDarkBlue);
-  border-right: var(--borderDarkBlue);
-  border-bottom: unset;
+.scrollTopButton {
+  display: unset;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 6em; /* Place the button at the bottom of the page */
+  right: 1em; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--highlightColor); /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0.5em; /* Some padding */
+  border-radius: var(--borderRadius); /* Rounded corners */
+  border: var(--borderDarkBlueColor);
 }
 
-.dropdownSubmenu {
-  margin-left: 0.5em;
+.scrollTopButton.hideButton {
+  display: none;
+}
+
+.scrollTopButton:hover {
+  background-color: var(
+    --darkMustardColor
+  ); /* Add a dark-grey background on hover */
+}
+
+.topArrowIcon {
+  filter: invert();
+  aspect-ratio: 1;
+  width: 1.5em;
 }
 
 /*****************************************************/
@@ -37,16 +49,6 @@
 /*****************************************************/
 
 @media (min-width: 992px) {
-  .dropdown {
-    width: 16em;
-    top: 100%;
-    transform: translateY(0%);
-    border-radius: 0 0 var(--borderRadius) var(--borderRadius);
-    border-bottom: var(--borderDarkBlue);
-    border-left: var(--borderDarkBlue);
-    border-top: unset;
-    border-right: var(--borderDarkBlue);
-  }
 }
 
 /*****************************************************/

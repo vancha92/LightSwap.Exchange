@@ -10,7 +10,6 @@ import "./MenuItem.css";
 const MenuItems = ({ menuItem, depthLevel }) => {
   const [dropdownToggled, setDropdownToggled] = useState(false);
   const ref = useRef();
-  const dropdownClass = depthLevel > 1 ? "subMenuItem" : "menuItem";
 
   // Dropdown toggle
   const toggleDropdown = () => {
@@ -48,7 +47,7 @@ const MenuItems = ({ menuItem, depthLevel }) => {
   if (menuItem.subMenu) {
     return (
       <li
-        className="menuItem"
+        className={depthLevel < 1 ? "menuItem" : "menuItem subMenu"}
         ref={ref}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
@@ -59,7 +58,7 @@ const MenuItems = ({ menuItem, depthLevel }) => {
             <p className="iconButtonTitle menuItemTitle">{menuItem.title}</p>
           </div>
         ) : (
-          <p className="menuItemTitle" onClick={toggleDropdown}>
+          <p className="subMenuItemTitle" onClick={toggleDropdown}>
             {menuItem.title}
           </p>
         )}
@@ -76,14 +75,14 @@ const MenuItems = ({ menuItem, depthLevel }) => {
   // Path for menus w/o submenus
   if (!menuItem.subMenu) {
     return (
-      <li className="menuItem">
+      <li className={depthLevel < 1 ? "menuItem" : "menuItem subMenu"}>
         {depthLevel < 1 ? (
           <div className="iconButton" onClick={toggleDropdown}>
             <img src={menuItem.icon} alt="test" className="iconButtonIMGText" />
             <p className="iconButtonTitle menuItemTitle">{menuItem.title}</p>
           </div>
         ) : (
-          <p className="menuItemTitle" onClick={toggleDropdown}>
+          <p className="subMenuItemTitle" onClick={toggleDropdown}>
             {menuItem.title}
           </p>
         )}

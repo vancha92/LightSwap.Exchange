@@ -4,8 +4,9 @@
 .navMenuContainer {
   grid-area: navbar;
   position: sticky;
+  z-index: 9000;
   bottom: 0;
-  height: 56px;
+  height: 78px;
   display: flex;
   align-items: center;
   background: var(--darkBlueColor);
@@ -23,12 +24,14 @@
 
 .navMenu {
   display: flex;
-  position: relative;
+  /* position: relative; */
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
   gap: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 /*****************************************************/
@@ -54,6 +57,7 @@
     border-top: none;
     border-bottom: var(--borderDarkMustard);
     transition: top 0.3s;
+    padding-left: 1em;
   }
 
   .brandLogoNav {
@@ -63,7 +67,6 @@
     margin-top: 4px;
     margin-right: 4px;
     margin-bottom: 4px;
-    margin-left: 8px;
   }
 
   .brandTitleNav {
@@ -75,6 +78,8 @@
 
   .navMenu {
     width: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

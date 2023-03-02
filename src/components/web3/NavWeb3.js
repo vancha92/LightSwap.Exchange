@@ -1,5 +1,7 @@
 // packages
-import React from "react";
+// eslint-disable-next-line
+import React, { useEffect, useState } from "react";
+import { useWindowSize } from "../../hooks/useWindowSize";
 
 // pages and components
 import headLogo from "../../assets/headLogo.png";
@@ -8,14 +10,17 @@ import headLogo from "../../assets/headLogo.png";
 import "./NavWeb3.css";
 
 const NavWeb3 = () => {
+  const size = useWindowSize();
+
   return (
     <div className="navWeb3Container">
       <div className="navWeb3">
         <img src={headLogo} alt="" className="brandLogoWeb3" />
-        <div style={{ display: "flex" }}>
-          <div>web3</div>
-          <div>web3</div>
-          <div>web3</div>
+
+        <div className="buttonContainer highlightBG">
+          <button className="buttonTextOnly">
+            {size.width > 991 ? "Connect Wallet" : "Connect"}
+          </button>
         </div>
       </div>
     </div>
