@@ -52,7 +52,9 @@ p,
 div,
 a,
 span,
-button {
+button,
+select,
+option {
   font-family: var(--textFont);
   color: var(--whiteColor);
 }

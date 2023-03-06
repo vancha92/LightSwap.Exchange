@@ -1,9 +1,37 @@
 /*****************************************************/
 /* Default                                           */
 /*****************************************************/
-.mainContainer {
-  min-height: calc(100vh - 142px);
-  position: relative;
+.tradeModuleTop {
+}
+
+.tradeSwitchContainer {
+  display: flex;
+  margin: 0.5em 0;
+  padding: 0 2em;
+  gap: 1em;
+}
+
+.swapLinkContainer,
+.poolLinkContainer {
+  width: 100%;
+  padding: 0.75em;
+  cursor: pointer;
+  font-size: 1.2em;
+  opacity: 0.5;
+}
+
+.swapLinkContainer.active,
+.poolLinkContainer.active {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.swapLinkContainer {
+  text-align: end;
+}
+
+.poolLinkContainer {
+  text-align: start;
 }
 
 /*****************************************************/
@@ -23,9 +51,6 @@
 /*****************************************************/
 
 @media (min-width: 992px) {
-  .mainContainer {
-    min-height: calc(100vh - 64px);
-  }
 }
 
 /*****************************************************/

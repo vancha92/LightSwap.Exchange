@@ -1,55 +1,7 @@
 /*****************************************************/
 /* Default                                           */
 /*****************************************************/
-.tradeContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 2em;
-}
-
-.swapModule {
-  width: 325px;
-  background: var(--twoColoredBlue);
-  border: var(--borderDarkMustard);
-  border-radius: var(--borderRadius);
-}
-
-/* Top **********************************************/
-.swapModuleTop {
-}
-
-.tradeSwitchContainer {
-  display: flex;
-  margin: 0.5em 0;
-  padding: 0 2em;
-  gap: 1em;
-}
-
-.swapContainer,
-.liquidityContainer {
-  width: 100%;
-  padding: 0.75em;
-  cursor: pointer;
-  font-size: 1.2em;
-  opacity: 0.5;
-}
-
-.swapContainer.active,
-.liquidityContainer.active {
-  opacity: 1;
-  pointer-events: none;
-}
-
-.swapContainer {
-  text-align: end;
-}
-
-.liquidityContainer {
-  text-align: start;
-}
-
-/* Middle*********************************************/
-.swapModuleMiddle {
+.tradeModuleMiddle {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,6 +37,7 @@
 .toCCYAmount {
   width: 100%;
   text-align: end;
+  margin-left: 1em;
 }
 
 .switchDirectionContainer {
@@ -107,10 +60,14 @@
   width: 24px;
 }
 
-/* Bottom*********************************************/
-.swapModuleBottom {
+/* Pool specifics */
+.tradeModuleMiddle.pool {
+  padding: 1em 2em 1em 2em;
+}
+
+.buttonContainer.highlightBG.pool {
+  width: 100%;
   text-align: center;
-  padding: 1em 2em 2em 2em;
 }
 
 /*****************************************************/
@@ -130,10 +87,6 @@
 /*****************************************************/
 
 @media (min-width: 992px) {
-  .tradeContainer {
-    margin-top: 20vh;
-    left: 0;
-  }
 }
 
 /*****************************************************/

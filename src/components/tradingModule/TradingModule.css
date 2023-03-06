@@ -1,9 +1,11 @@
 /*****************************************************/
 /* Default                                           */
 /*****************************************************/
-.mainContainer {
-  min-height: calc(100vh - 142px);
-  position: relative;
+.tradingModule {
+  width: 325px;
+  background: var(--twoColoredBlue);
+  border: var(--borderDarkMustard);
+  border-radius: var(--borderRadius);
 }
 
 /*****************************************************/
@@ -23,9 +25,6 @@
 /*****************************************************/
 
 @media (min-width: 992px) {
-  .mainContainer {
-    min-height: calc(100vh - 64px);
-  }
 }
 
 /*****************************************************/

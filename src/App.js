@@ -15,8 +15,8 @@ import Farms from "./pages/earn/Farms";
 import Pools from "./pages/earn/Pools";
 import Home from "./pages/home/Home";
 import LightPad from "./pages/lightPad/LightPad";
-import Liquidity from "./pages/trade/Liquidity";
-import Swap from "./pages/trade/Swap";
+// import Liquidity from "./pages/trade/Liquidity";
+import Trade from "./pages/trade/Trade";
 
 // styles
 import "./App.css";
@@ -35,8 +35,7 @@ function App() {
         <Main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/swap" element={<Swap />} />
-            <Route path="/liquidity" element={<Liquidity />} />
+            <Route path="/trade/:tradeModule" element={<Trade />} />
             <Route path="/farms" element={<Farms />} />
             <Route path="/pools" element={<Pools />} />
             <Route path="/lightpad" element={<LightPad />} />

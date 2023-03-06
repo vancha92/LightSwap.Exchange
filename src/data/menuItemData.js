@@ -7,7 +7,7 @@ export const menuItemData = [
   {
     title: "Trade",
     icon: tradeIcon,
-    link: "swap",
+    link: "trade/swap",
     type: "internal",
   },
   {
